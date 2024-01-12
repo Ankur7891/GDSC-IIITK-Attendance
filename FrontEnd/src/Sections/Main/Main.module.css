@@ -3,14 +3,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between
 }
 
 .Frame {
     width: 75%;
     background-color: #badaff;
-    height: 300px;
-    /* max-height: 400px; */
+    min-height: 240px;
+    max-height: 360px;
     border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
@@ -37,4 +37,10 @@
     text-transform: uppercase;
     text-align: center;
     text-shadow: 0px 0px 10px black;
+}
+
+@media only screen and (max-height: 550px) {
+    .MainLogo {
+        margin-block: 10px 0px;
+    }
 }

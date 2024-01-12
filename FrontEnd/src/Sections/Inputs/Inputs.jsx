@@ -3,11 +3,12 @@ import styles from './Inputs.module.css';
 import TextBox from '../../Components/TextBox/TextBox';
 
 function Inputs() {
-    const exportData = () => {
+    const divertClient = () => {
 
     };
   return (
-    <form id="gdsc-attendance" action="http://172.16.194.252:5000/register" method="post" onSubmit={exportData}>
+    <form id="gdsc-attendance" action="http://172.16.194.252:5000/register" method="post" onSubmit={divertClient}>
+     <div className={styles.FormContent}>
       <TextBox
         name="Name"
         type="text"
@@ -26,7 +27,10 @@ function Inputs() {
         placeholder="Enter Your Mobile Number"
         isRequired="true"
       />
+        <div className={styles.BtnContainer}>
       <button type="submit" className={styles.SubmitBtn}> Submit </button>
+        </div>
+      </div>
     </form>
   );
 }

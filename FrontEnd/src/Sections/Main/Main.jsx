@@ -12,7 +12,7 @@ function Main() {
           <h1 className={styles.AtdTag}> Attendance </h1>
         </div>
         <Inputs />
-      </div>
+      </div> 
     </div>
   );
 }
