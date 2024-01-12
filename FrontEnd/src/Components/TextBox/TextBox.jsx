@@ -13,7 +13,7 @@ function TextBox(props) {
       </label>
       <div className={styles.Container}>
         <input
-          id={name}
+          name={name}
           className={styles.Input}
           type={type}
           placeholder={placeholder}
