@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./Assets/Fonts/Josefin_Sans/JosefinSans-Thin.ttf');
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./Assets/Fonts/Josefin_Sans/JosefinSans-ExtraLight.ttf');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./Assets/Fonts/Josefin_Sans/JosefinSans-Regular.ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./Assets/Fonts/Josefin_Sans/JosefinSans-Medium.ttf');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./Assets/Fonts/Josefin_Sans/JosefinSans-SemiBold.ttf');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./Assets/Fonts/Josefin_Sans/JosefinSans-Bold.ttf');
+  font-weight: 700;
+  font-display: swap;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans';
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* No Display on Laptops */
+@media only screen and (min-width: 600px) {
+  .App {
+    display: none;
+  }
+}

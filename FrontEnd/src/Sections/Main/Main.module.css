@@ -1,0 +1,40 @@
+.Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Frame {
+    width: 75%;
+    background-color: #badaff;
+    height: 300px;
+    /* max-height: 400px; */
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainLogo {
+    width: 100%;
+    margin-block: -50px 10px;
+}
+
+.Atd {
+    position: relative;
+}
+
+.AtdTag {
+    padding-block: 2.5rem;
+    background-image: url("../../Assets/Images/atd.png");
+    background-position: center bottom;
+    max-height: 300px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 10px black;
+}

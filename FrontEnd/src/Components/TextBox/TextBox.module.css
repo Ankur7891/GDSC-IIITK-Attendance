@@ -1,0 +1,24 @@
+.Wrapper {
+    padding-block-start: 10px;
+    font-size: 0.5rem;
+}
+
+.Label {
+    font-weight: 600;
+    color: #828282;
+}
+
+.Container {
+    padding-block: 2.5px;
+}
+
+.Input {
+    border: 1px solid #DED2D9;
+    border-radius: 3px;
+    padding-block: 5px;
+    padding-inline-start: 3px;
+    width: 100%;
+    font-size: 0.5rem;
+    font-weight: 300;
+    color: #E0E0E0;
+}
