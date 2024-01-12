@@ -1,15 +1,19 @@
 .Container {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: center;
+    padding-block-end: 1rem;
+    row-gap: 7px;
 }
 
 .Frame {
     width: 75%;
+    height: 100%;
     background-color: #badaff;
-    min-height: 240px;
+    min-height: 270px;
     max-height: 360px;
     border: 1px solid black;
     border-radius: 10px;
@@ -19,7 +23,7 @@
 }
 
 .MainLogo {
-    width: 100%;
+    width: 90%;
     margin-block: -50px 10px;
 }
 
@@ -42,5 +46,11 @@
 @media only screen and (max-height: 550px) {
     .MainLogo {
         margin-block: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .AtdTag {
+        font-size: 1.5rem;
     }
 }

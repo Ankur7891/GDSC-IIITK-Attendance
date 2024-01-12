@@ -5,8 +5,6 @@ import csv
 app = Flask(__name__)
 ipDict = {}
 
-
-
 def write_to_csv(file_path,  data,headers = ["Name","Roll","Mobile"]):
     file_exists = os.path.exists(file_path)
 
@@ -18,14 +16,9 @@ def write_to_csv(file_path,  data,headers = ["Name","Roll","Mobile"]):
 
         csv_writer.writerow(data)
 
-
 def writeIp(data,file_path="ipAddress.txt"):
     with open(file_path, 'a', newline='') as f:
         f.write(data+"\n")
-
-
-
-
 
 @app.route('/')
 def home():
@@ -45,10 +38,10 @@ def register():
             write_to_csv("entries.csv", data_to_write)
             return "Entry Stored" 
 
-        return f'IP exists {Name}'
+        return ('', 204)
 
     else:
-        return 'Invalid method'
+        return 'INVALID Method !'
 
 if __name__ == '__main__':
     file_exists = os.path.exists("ipAddress.txt")
@@ -65,4 +58,3 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
     print(ipDict)
     [writeIp(ip) for ip in ipDict.keys()]
-

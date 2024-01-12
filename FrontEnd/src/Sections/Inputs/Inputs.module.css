@@ -2,20 +2,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-inline: 1rem;
+    padding-inline: 0.85rem;
     padding-block: 0.75rem;
-    gap: 0.25rem;
+    gap: 0.1rem;
 }
 
 .BtnContainer {
     align-self: center;
     padding-inline: 1rem;
-    padding-block: 0.25rem;
+    padding-block: 0.5rem;
 }
 
 .SubmitBtn {
     text-transform: uppercase;
     text-align: center;
+    font-weight: 700;
     letter-spacing: 1px;
     background-color: #0F9D58;
     color: white;
@@ -24,4 +25,16 @@
     padding-block-start: 0.5rem;
     padding-block-end: 0.35rem;
     padding-inline: 1rem;
+}
+
+.TickWrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tick {
+    max-height: 135px;
+    padding-block: 1rem;
 }

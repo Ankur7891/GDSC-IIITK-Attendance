@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 
 function TextBox(props) {
-  const { name, type, placeholder, isRequired } = props;
+  const { show, name, type, placeholder, isRequired } = props;
   const [value, setValue] = useState('');
   return (
     <div className={styles.Wrapper}>
       <label className={styles.Label} htmlFor={name}>
-        {name}
+        {show}
       </label>
       <div className={styles.Container}>
         <input
@@ -28,6 +28,7 @@ function TextBox(props) {
 }
 
 TextBox.propTypes = {
+  show: PropTypes.string,
   name: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['text', 'password']),
   placeholder: PropTypes.string.isRequired,
@@ -36,6 +37,7 @@ TextBox.propTypes = {
 };
 
 TextBox.defaultProps = {
+  show: '',
   type: 'text',
   value: '',
   isRequired: false,

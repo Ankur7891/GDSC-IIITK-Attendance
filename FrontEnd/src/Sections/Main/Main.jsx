@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Main.module.css';
-import mainlogo from '../../Assets/Images/gdsc-social.svg';
+import mainlogo from '../../Assets/Images/GDSCLogo.svg';
 import Inputs from '../Inputs/Inputs';
 
 function Main() {
