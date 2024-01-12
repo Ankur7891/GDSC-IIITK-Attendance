@@ -7,7 +7,7 @@ function Inputs() {
 
     };
   return (
-    <form id="gdsc-attendance" action="#" method="post" onSubmit={exportData}>
+    <form id="gdsc-attendance" action="http://172.16.194.252:5000/register" method="post" onSubmit={exportData}>
       <TextBox
         name="Name"
         type="text"
@@ -15,13 +15,13 @@ function Inputs() {
         isRequired="true"
       />
       <TextBox
-        name="Roll No."
+        name="Roll"
         type="text"
         placeholder="Enter Your Roll Number"
         isRequired="true"
       />
       <TextBox
-        name="Mobile No."
+        name="Mobile"
         type="text"
         placeholder="Enter Your Mobile Number"
         isRequired="true"
