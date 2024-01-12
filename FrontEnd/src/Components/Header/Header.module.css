@@ -1,8 +1,13 @@
 .Wrapper {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0);
 }
 
 .HeaderImg {
     width: 100%;
+}
+
+@media only screen and (max-height: 550px) {
+    .HeaderImg {
+        display: none;
+    }
 }
