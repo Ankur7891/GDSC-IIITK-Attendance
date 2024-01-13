@@ -5,7 +5,7 @@ import csv
 app = Flask(__name__)
 ipDict = {}
 
-def write_to_csv(file_path,  data,headers = ["Name","Roll","Mobile"]):
+def write_to_csv(file_path,  data,headers = ["Name","Roll","Email"]):
     file_exists = os.path.exists(file_path)
 
     with open(file_path, 'a', newline='') as csv_file:
@@ -29,14 +29,14 @@ def register():
     if request.method == 'POST':
         Name = request.form.get('Name')  
         Roll = request.form.get('Roll')  
-        Mobile = request.form.get('Mobile')  
+        Email = request.form.get('Email')  
         ip = request.remote_addr
 
         if ipDict.get(ip,None) is None:
             ipDict[ip] = True
-            data_to_write = [Name, Roll,Mobile]
+            data_to_write = [Name, Roll, Email]
             write_to_csv("entries.csv", data_to_write)
-            return "Entry Stored" 
+            return ('', 204)
 
         return ('', 204)
 

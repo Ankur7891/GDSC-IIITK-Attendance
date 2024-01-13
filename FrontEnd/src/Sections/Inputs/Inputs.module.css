@@ -7,6 +7,10 @@
     gap: 0.1rem;
 }
 
+.Hider {
+    display: none;
+}
+
 .BtnContainer {
     align-self: center;
     padding-inline: 1rem;
@@ -35,6 +39,6 @@
 }
 
 .Tick {
-    max-height: 135px;
-    padding-block: 1rem;
+    max-height: 200px;
+    padding-block: 2rem;
 }
