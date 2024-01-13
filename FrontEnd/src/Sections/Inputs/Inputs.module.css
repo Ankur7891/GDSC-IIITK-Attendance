@@ -11,6 +11,33 @@
     display: none;
 }
 
+.InputWrapper {
+    font-size: 80%;
+    padding-block: 0.25rem;
+}
+
+.Label {
+    padding-inline-start: 0.25rem;
+    font-weight: 500;
+    color: black;
+}
+
+.InputContainer {
+    padding-block-start: 0.25rem;
+}
+
+.Input {
+    display: flex;
+    border: 1px solid #4285F4;
+    border-radius: 3px;
+    padding-inline-start: 0.25rem;
+    padding-block: 0.3rem 0.15rem;
+    width: 100%;
+    font-weight: 400;
+    background-color: #EDF5FF;
+    color: #004B89;
+}
+
 .BtnContainer {
     align-self: center;
     padding-inline: 1rem;
@@ -30,6 +57,13 @@
     padding-block-start: 0.5rem;
     padding-block-end: 0.35rem;
     padding-inline: 1rem;
+    cursor: pointer;
+}
+
+.SubmitBtn:disabled {
+    /* background-color: #EB4639; */
+    background-color: #004B89;
+    opacity: 0.5;
 }
 
 .TickWrapper {
