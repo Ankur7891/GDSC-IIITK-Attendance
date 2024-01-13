@@ -9,7 +9,7 @@ function Inputs() {
     const serverIP = '192.168.137.1';
     const routePath = `http://${serverIP}:5000/register`;
 
-    const [ status, setStatus ] = useState(1);
+    const [ status, setStatus ] = useState(0);
     const submissionHandler = () => {
       setStatus(1);
     };
