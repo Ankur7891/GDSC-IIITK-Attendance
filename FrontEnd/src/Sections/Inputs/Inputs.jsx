@@ -3,7 +3,8 @@ import styles from './Inputs.module.css';
 import tick from '../../Assets/Images/tick.svg';
 
 function Inputs() {
-  const serverIP = '192.168.137.1';
+  // const serverIP = '172.16.196.221';
+  const serverIP = '192.168.0.106';
   const routePath = `http://${serverIP}:5000/register`;
 
   const [name, setName] = useState('');
