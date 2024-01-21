@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Inputs.module.css';
 import tick from '../../Assets/Images/tick.svg';
+import ip from '../../ipJson.json'
 
 function Inputs() {
-  const serverIP = '192.168.137.1';
+  // const serverIP = '172.16.196.221';
+  const serverIP = ip.ipAddress;
+  console.log(serverIP)
   const routePath = `http://${serverIP}:5000/register`;
 
   const [name, setName] = useState('');
