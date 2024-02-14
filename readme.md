@@ -1,3 +1,6 @@
+## About
+A local network solution for taking attendance without internet connectivity. We detect ip of all connections and store them so that they can't submit attendance again via the same device. The solution is feasible for 10 - 20 people at a time in a localised network with good connectivity.
+
 ## Requirements
     - react
     - flask
